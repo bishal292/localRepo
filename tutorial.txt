@@ -1,0 +1,21 @@
+to add a cuurent repository to git : "git init" command is used
+
+To add/connect a current or any local repository with github 
+    1. first create a repository on github without md file the copy the link of the repository then,  below command is used in termial
+        git add origin <link_of_the_repository>
+            origin can be anyName which is would be used to define the remote repository with the same name
+            but origin is mainly preferred
+
+To check or verify remote repository below command is used 
+    git remote -v
+to check current branch below command is used 
+    git branch
+to rename current branch name below command is used 
+    git branch -M New_Name
+to upload all the commit files on github push command is used.
+    git push repository_Name branch_name
+
+if we are working for a long time in a same repository and required to push repetedly then 
+    git push -u origin(repository_Name) main(branch_name)
+
+    after this we can only use git push to push all the other files in the repository
