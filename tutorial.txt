@@ -8,10 +8,6 @@ To add/connect a current or any local repository with github
 
 To check or verify remote repository below command is used 
     git remote -v
-to check current branch below command is used 
-    git branch
-to rename current branch name below command is used 
-    git branch -M New_Name
 to upload all the commit files on github push command is used.
     git push repository_Name branch_name
 
@@ -19,3 +15,54 @@ if we are working for a long time in a same repository and required to push repe
     git push -u origin(repository_Name) main(branch_name)
 
     after this we can only use git push to push all the other files in the repository
+Basically branch means multiple change in a single code at a time without affect other
+    Branches allow multiple developers to work on different aspects of a project 
+    simultaneously without interfering with each other's changes. Each branch represents 
+    an independent set of changes to the codebase.
+to check current branch below command is used 
+    git branch
+to rename current branch name below command is used 
+    git branch -M New_Name
+to create a new branch
+    git checkout-b <new_Branch_Name> 
+to navigate or change branch
+    git checkout <branch_name>
+to delete a branch
+    git branch -d <branch_name>
+to push a content on required branch
+    git push origin <branch_name>
+
+
+To compare or find difference between two branch is:
+    git diff <Another_branch_name>
+
+To merge two Branches
+    git merge <branch_name>
+
+To fetch and download content from remote repository(It is done when changes in a content is directly made through git hub.)
+    it download the remote repository and replace with our local repository
+
+        git pull <remote_repository_Name> <branch_name>
+        |
+        
+        --->>> It is also used when merging our forked code changes to the origninal ownler
+
+
+Conflict while merging contents occur
+    when same line in the content is different in the Branches
+
+To check all the commits log:
+    git log
+UNDOING CHANGES
+condition: 
+    1. If a file is added(Staged) but not commited and want to jump(undo) on previous commit then
+        git reset <file_Name>
+    2. commited changes(For one commit)
+        git reset HEAD~1        (LAtest chang (commit) is named as HEAD. This will reset the changes with the last commit in the git)
+    3. commited change(For many code)
+        git reset <commit_Hash>                 (used to discard the changes done in the given commit(commit_Hash))
+        OR
+        git reset --hard <commit_Hash>          (--hard is used to remove all the changes done after the commit included (commit_Hash))
+
+Fork 
+    It is a rough copy of previous repository which incledes all the same code and visibility setting from the previous one.
