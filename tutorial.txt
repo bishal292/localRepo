@@ -2,7 +2,7 @@ to add a cuurent repository to git : "git init" command is used
 
 To add/connect a current or any local repository with github 
     1. first create a repository on github without md file the copy the link of the repository then,  below command is used in termial
-        git add origin <link_of_the_repository>
+        git remote add origin <link_of_the_repository>
             origin can be anyName which is would be used to define the remote repository with the same name
             but origin is mainly preferred
 
