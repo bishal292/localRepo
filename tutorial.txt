@@ -32,6 +32,11 @@ to delete a branch
 to push a content on required branch
     git push origin <branch_name>
 
+To Add multiple folders(Sub-folders) in a git repository Simply we can add by using same command used for uploading files.
+
+BUt for deleting a sub folder the command is :-
+        git rm -r <Sub_Folder_Name OR Directory>
+
 
 To compare or find difference between two branch is:
     git diff <Another_branch_name>
